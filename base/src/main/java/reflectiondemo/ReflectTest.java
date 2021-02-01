@@ -9,14 +9,6 @@ import java.lang.reflect.Method;
  * @Date 2021/1/29 15:24
  * @Version 1.0
  *
- * 目的：
- * 通过反射修改私有对象的私有属性和调用私用方法
- * 步骤：
- * 1.通过反射获取类的字节码对象(三种方式)
- *   1.1  Class.forName("XXXX")  传入类的全限定名称
- *   1.2  XXXX.class          全限定类名.class
- *   1.3  类实例.getClass()    通过该类的实例获取
- * 2.通过字节码对象操作属性和方法
  */
 public class ReflectTest {
     private static  Class personclass=null;
