@@ -6,5 +6,12 @@ package threaddemo;
  * @Version 1.0
  */
 public class MyResources {
-    public  static  int num=10;
+    public  static  int num=1000;
+
+    /**
+     * 对num减一
+     */
+    public  static  synchronized void minusOne(){
+         num--;
+    }
 }
