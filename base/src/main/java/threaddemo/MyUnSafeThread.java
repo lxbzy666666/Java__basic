@@ -5,10 +5,10 @@ package threaddemo;
  * @Date 2021/2/1 15:34
  * @Version 1.0
  */
-class MyThread extends  Thread{
+class MyUnSafeThread extends  Thread{
     @Override
     public void run() {
-        System.out.println(Thread.currentThread().getName());
         MyResources.num--;
+        System.out.println(Thread.currentThread().getName()+"修改后："+MyResources.num);
     }
 }
