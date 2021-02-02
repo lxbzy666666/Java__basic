@@ -1,7 +1,4 @@
-package threaddemo;
-
-import java.util.concurrent.ThreadPoolExecutor;
-
+package threaddemo.modifyresources;
 /**
  * @Author Gary luo
  * @Date 2021/2/1 15:19
@@ -12,7 +9,7 @@ public class ThreadDemoTest {
 //        notSageModify()
         safeModify();
         Thread.sleep(1000);
-        System.out.println("最终多线程修改后的值："+MyResources.num);
+        System.out.println("最终多线程修改后的值："+ MyResources.num);
     }
 
     /**
